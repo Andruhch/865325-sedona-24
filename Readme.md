@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Зверков](https://up.htmlacademy.ru/htmlcss/24/user/865325).
-* Наставник: [Виктория Коваленко] (https://htmlacademy.ru/profile/id42638).
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
