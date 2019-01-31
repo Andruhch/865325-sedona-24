@@ -1,0 +1,11 @@
+.promo-image {
+    background: url("../img/background-photo.jpg") no-repeat ;
+    width: 1200px;
+    height: 800px;
+}
+
+.hotel-stars li {
+    background: url("../img/star.svg") no-repeat;
+    width: 18px ;
+    height: 17px;
+}
