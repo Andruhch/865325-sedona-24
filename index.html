@@ -34,11 +34,28 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
             в седоне</p>
         <h2>поиск гостиницы в седоне</h2>
-        <label for="start">Дата заезда:</label>
-        <input type="date" id="start" name="start-date">
-        <label for="end">Дата выезда:</label>
-        <input type="date" id="end" name="end-date">
-        <input type="submit" value="НАЙТИ">
+        <form class="booking-form" action="#" method="post">
+
+            <div class="booking-form-dates">
+                <label for="booking-form-date-in">дата заезда:</label>
+                <input type="date" name="booking-form-date-in" id="booking-form-date-in" value="2014-04-24">
+            </div>
+            <div class="booking-form-dates">
+                <label for="booking-form-date-out">дата выезда:</label>
+                <input type="date" name="booking-form-date-out" id="booking-form-date-out" value="2014-04-07">
+            </div>
+            <div class="booking-form-counters">
+                <label for="number-adult">взрослые:</label>
+                <input type="number" class="booking-form-counter-input number-adult" name="number-adult" id="number-adult" value="2" min="1" max="9">
+            </div>
+            <div class="booking-form-counters kids ">
+                <label for="number-kids">дети:</label>
+                <input type="number" class="booking-form-counter-input number-kids" name="number-kids" id="number-kids" value="0" min="0" max="9">
+            </div>
+            <div>
+                <button type="submit" class="booking-form-submit">найти</button>
+            </div>
+        </form>
     </section>
 </main>
 <footer class="main-footer">
