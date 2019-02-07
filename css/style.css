@@ -1,11 +1,105 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    color: #000;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000;
+}
+
 .promo-image {
-    background: url("../img/background-photo.jpg") no-repeat ;
+    background: url("../img/background-photo.jpg") no-repeat;
     width: 1200px;
     height: 800px;
 }
 
+.sedona-description {
+    font-size: 21px;
+}
+
+.features p {
+    font-weight: normal;
+}
+
+.booking h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.booking p {
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.booking-form-dates input, .booking-form-counters input {
+    background-color: #f2f2f2;
+}
+
+.booking-form-dates input:hover, .booking-form-counters input:hover {
+    background-color: #ebebeb;
+}
+
+.booking-form-dates input:focus, .booking-form-counters input:focus {
+    background-color: #ffffff;
+}
+
+.hashtag {
+    font-size: 21px;
+}
+
+.footer-social ul{
+    list-style: none;
+}
+
+.footer-copyright b{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.result-list {
+    list-style: none;
+}
+
+.hotel-name a {
+    font-size: 21px;
+    color: black;
+}
+.hotel-name a:hover{
+    color: #81b3d2;
+}
+
+.hotel-name a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.result-list_item span {
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.hotel-stars {
+    list-style: none;
+}
 .hotel-stars li {
     background: url("../img/star.svg") no-repeat;
-    width: 18px ;
+    width: 18px;
     height: 17px;
 }
