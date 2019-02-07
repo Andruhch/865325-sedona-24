@@ -13,6 +13,22 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .main-navigation {
     color: #000;
 }
@@ -31,16 +47,17 @@ a {
     height: 800px;
 }
 
-.sedona-description {
-    font-size: 21px;
-}
-
 .features p {
     font-weight: normal;
 }
 
+.features .sedona-description {
+    font-size: 21px;
+    font-weight: bold;
+}
+
 .booking h2 {
-    font-size: 30px;
+    font-size: 21px;
     line-height: 36px;
 }
 
@@ -65,11 +82,11 @@ a {
     font-size: 21px;
 }
 
-.footer-social ul{
+.footer-social ul {
     list-style: none;
 }
 
-.footer-copyright b{
+.footer-copyright b {
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -82,7 +99,8 @@ a {
     font-size: 21px;
     color: black;
 }
-.hotel-name a:hover{
+
+.hotel-name a:hover {
     color: #81b3d2;
 }
 
@@ -98,6 +116,7 @@ a {
 .hotel-stars {
     list-style: none;
 }
+
 .hotel-stars li {
     background: url("../img/star.svg") no-repeat;
     width: 18px;
