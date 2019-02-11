@@ -67,6 +67,10 @@ input[type="radio"].visually-hidden {
     width: 240px;
 }
 
+.site-navigation .current {
+    color: #766357;
+}
+
 .main-header li:first-child {
     margin-left: 73px;
 }
@@ -182,6 +186,7 @@ input[type="radio"].visually-hidden {
 .footer-copyright b {
     font-weight: normal;
     text-transform: uppercase;
+    vertical-align: center;
 }
 
 .result-list {
@@ -231,11 +236,11 @@ input[type="radio"].visually-hidden {
     color: black;
 }
 
-.hotel-name a:hover {
+.hotel-name a:hover, .site-navigation-item a:hover {
     color: #81b3d2;
 }
 
-.hotel-name a:active {
+.hotel-name a:active, .site-navigation-item a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
