@@ -8,73 +8,79 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="main-header">
-    <nav class="main-navigation">
-        <a class="main-header-logo">
-            <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
-        </a>
-        <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и Видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="inner.html">Гостиницы</a></li>
-        </ul>
-    </nav>
-</header>
-<main class="container">
-    <h1 class="visually-hidden">Седона</h1>
-    <section class="promo">
-        <div class="promo-image"></div>
-    </section>
-    <section class="features">
-        <p class="sedona-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <!-- Здесь будет описание преимуществ -->
-    </section>
-    <section class="booking">
-        <h2>Заинтересовались? </h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
-            в седоне</p>
-        <button class="search-hotel-btn" type="button">Поиск гостиницы в Седоне</button>
-        <form class="booking-form" action="#" method="post">
+<div class="container">
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
+            </a>
+            <ul class="site-navigation">
+                <li class="site-navigation-item"><a href="#">Информация</a></li>
+                <li class="site-navigation-item"><a href="#">Фото и Видео</a></li>
+                <li class="site-navigation-item"><a href="#">Карта штата</a></li>
+                <li class="site-navigation-item"><a href="inner.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="">
+        <h1 class="visually-hidden">Седона</h1>
+        <section class="promo">
+            <div class="promo-image">
+                <img class="img-welcome" src="img/welcome.svg" alt="Приветствие" width="459" height="353">
+            </div>
+        </section>
+        <section class="features">
+            <h2 class="sedona-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <!-- Здесь будет описание преимуществ -->
+        </section>
+        <section class="booking">
+            <h2>Заинтересовались? </h2>
+            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+                в седоне</p>
+            <button class="search-hotel-btn" type="button">Поиск гостиницы в Седоне</button>
+            <form class="booking-form" action="#" method="post">
 
-            <div class="booking-form-dates">
-                <label for="booking-form-date-in">дата заезда:</label>
-                <input type="date" name="booking-form-date-in" id="booking-form-date-in" value="2014-04-24">
-            </div>
-            <div class="booking-form-dates">
-                <label for="booking-form-date-out">дата выезда:</label>
-                <input type="date" name="booking-form-date-out" id="booking-form-date-out" value="2014-04-07">
-            </div>
-            <div class="booking-form-counters">
-                <label for="number-adult">взрослые:</label>
-                <input type="number" class="booking-form-counter-input number-adult" name="number-adult" id="number-adult" value="2" min="1" max="9">
-            </div>
-            <div class="booking-form-counters kids ">
-                <label for="number-kids">дети:</label>
-                <input type="number" class="booking-form-counter-input number-kids" name="number-kids" id="number-kids" value="0" min="0" max="9">
-            </div>
+                <div class="booking-form-dates">
+                    <label for="booking-form-date-in">дата заезда:</label>
+                    <input type="date" name="booking-form-date-in" id="booking-form-date-in" value="2014-04-24">
+                </div>
+                <div class="booking-form-dates">
+                    <label for="booking-form-date-out">дата выезда:</label>
+                    <input type="date" name="booking-form-date-out" id="booking-form-date-out" value="2014-04-07">
+                </div>
+                <div class="booking-form-counters">
+                    <label for="number-adult">взрослые:</label>
+                    <input type="number" class="booking-form-counter-input number-adult" name="number-adult"
+                           id="number-adult" value="2" min="1" max="9">
+                </div>
+                <div class="booking-form-counters kids ">
+                    <label for="number-kids">дети:</label>
+                    <input type="number" class="booking-form-counter-input number-kids" name="number-kids"
+                           id="number-kids" value="0" min="0" max="9">
+                </div>
                 <button type="submit" class="booking-form-submit">найти</button>
-        </form>
-    </section>
-</main>
-<footer class="main-footer">
-    <div class="hashtag">#visitsedona</div>
-    <div class="footer-social">
-        <ul>
-            <li><a class="social-button" href="#">
-                <img src="img/t.svg" alt="Логотип Twitter">Twitter</a></li>
-            <li><a class="social-button" href="#">
-                <img src="img/fb-icon.svg" alt="Логотип Facebook">Facebook</a></li>
-            <li><a class="social-button" href="#">
-                <img src="img/youtube.svg" alt="Логотип Youtube">Youtube</a></li>
-        </ul>
-    </div>
-    <p class="footer-copyright">
-        <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru">
-            <img src="img/logo-name.png" alt="Логотип HtmlAcademy"></a>
-    </p>
-</footer>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="hashtag">#visitsedona</div>
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="#">
+                    <img src="img/t.svg" alt="Логотип Twitter"></a></li>
+                <li><a class="social-button" href="#">
+                    <img src="img/fb-icon.svg" alt="Логотип Facebook"></a></li>
+                <li><a class="social-button" href="#">
+                    <img src="img/youtube.svg" alt="Логотип Youtube"></a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>Website by</b>
+            <a class="button" href="https://htmlacademy.ru">
+                <img src="img/logo-name.png" alt="Логотип HtmlAcademy"></a>
+        </p>
+    </footer>
+</div>
 </body>
 </html>
