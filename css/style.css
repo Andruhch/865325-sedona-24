@@ -18,6 +18,15 @@ a {
     text-decoration: none;
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -92,24 +101,19 @@ input[type="radio"].visually-hidden {
 .promo-image {
     background: url("../img/background-photo.jpg") no-repeat;
     min-height: 506px;
-    position: relative;
 }
 
 .promo-image:after {
     content: "";
-    position: absolute;
+    display: flex;
     background: url(../img/polygon.svg) no-repeat center bottom;
-    z-index: 1;
-    height: 57px;
+    height: 69px;
     width: 1200px;
-    bottom: 0.5px;
 }
 
 .img-welcome {
-    position: absolute;
-    left: 50%;
-    margin-left: -230px;
-    top: 76px;
+    text-align: center;
+    padding-top: 76px;
     z-index: 1;
 }
 
@@ -147,6 +151,77 @@ input[type="radio"].visually-hidden {
     width: 434px;
 }
 
+.search-hotel {
+    margin-top: 52px;
+    text-align: center;
+}
+
+.search-hotel-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #766357;
+    width: 568px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.search-hotel-btn:hover {
+    background-color: #604e43;
+}
+
+.search-hotel-btn:active {
+    background-color: #503e33;
+    color: #847870;
+}
+
+.booking-form-dates {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.booking-form-dates label {
+    margin-right: 21px;
+
+}
+
+.booking-form-dates input {
+    box-sizing: border-box;
+    padding-left: 13px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 346px;
+    font-weight: 700;
+}
+
+.form-counters {
+    margin-left: 368px;
+    margin-top: 30px;
+}
+
+.booking-form-counters {
+    display: inline-block;
+    padding-right: 96px;
+}
+
+.booking-form-counters input {
+    box-sizing: border-box;
+    padding-left: 13px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    width: 114px;
+    font-weight: 700;
+}
+
+.booking-form-counters label {
+    margin-right: 10px;
+}
+
 .booking-form-dates input, .booking-form-counters input {
     background-color: #f2f2f2;
 }
@@ -157,6 +232,32 @@ input[type="radio"].visually-hidden {
 
 .booking-form-dates input:focus, .booking-form-counters input:focus {
     background-color: #ffffff;
+}
+
+.submit-field {
+    text-align: center;
+    margin-top: 54px;
+}
+
+.booking-form-submit {
+    width: 458px;
+    padding-top: 17px;
+    padding-bottom: 22px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.booking-form-submit:hover {
+    background-color: #669ec0;
+}
+
+.booking-form-submit:active {
+    background-color: #5496bd;
+    color: #87b6d1;
 }
 
 .main-footer {

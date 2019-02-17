@@ -25,7 +25,7 @@
     <main>
         <h1 class="visually-hidden">Седона</h1>
         <div class="promo-image">
-            <img class="img-welcome" src="img/welcome.svg" alt="Приветствие" width="459" height="353">
+            <div class="img-welcome"><img src="img/welcome.svg" alt="Приветствие" width="459" height="353"></div>
         </div>
         <section class="features">
             <h2 class="sedona-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -36,7 +36,9 @@
             <h2>Заинтересовались? </h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
                 в седоне</p>
-            <button class="search-hotel-btn" type="button">Поиск гостиницы в Седоне</button>
+            <div class="search-hotel">
+                <button class="search-hotel-btn" type="button">Поиск гостиницы в Седоне</button>
+            </div>
             <form class="booking-form" action="#" method="post">
 
                 <div class="booking-form-dates">
@@ -47,17 +49,22 @@
                     <label for="booking-form-date-out">дата выезда:</label>
                     <input type="date" name="booking-form-date-out" id="booking-form-date-out" value="2014-04-07">
                 </div>
-                <div class="booking-form-counters">
-                    <label for="number-adult">взрослые:</label>
-                    <input type="number" class="booking-form-counter-input number-adult" name="number-adult"
-                           id="number-adult" value="2" min="1" max="9">
+                <div class="form-counters">
+                    <div class="booking-form-counters">
+                        <label for="number-adult">взрослые:</label>
+                        <input type="number" class="booking-form-counter-input number-adult" name="number-adult"
+                               id="number-adult" value="2" min="1" max="9">
+                    </div>
+                    <div class="booking-form-counters kids ">
+                        <label for="number-kids">дети:</label>
+                        <input type="number" class="booking-form-counter-input number-kids" name="number-kids"
+                               id="number-kids" value="0" min="0" max="9">
+                    </div>
                 </div>
-                <div class="booking-form-counters kids ">
-                    <label for="number-kids">дети:</label>
-                    <input type="number" class="booking-form-counter-input number-kids" name="number-kids"
-                           id="number-kids" value="0" min="0" max="9">
+                <div class="submit-field">
+                    <button type="submit" class="booking-form-submit">найти</button>
                 </div>
-                <button type="submit" class="booking-form-submit">найти</button>
+
             </form>
         </section>
     </main>
