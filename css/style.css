@@ -180,6 +180,11 @@ input[type="radio"].visually-hidden {
     color: #847870;
 }
 
+.booking-form {
+    width: 568px;
+    margin: 0 auto;
+}
+
 .booking-form-dates {
     margin-top: 30px;
     text-align: center;
@@ -200,16 +205,20 @@ input[type="radio"].visually-hidden {
 }
 
 .form-counters {
-    margin-left: 368px;
+    margin-left: 53px;
     margin-top: 30px;
 }
 
-.booking-form-counters {
+.booking-adults {
     display: inline-block;
-    padding-right: 96px;
+    padding-right: 36px;
 }
 
-.booking-form-counters input {
+.booking-kids {
+    display: inline-block;
+}
+
+.booking-adults input, .booking-kids input {
     box-sizing: border-box;
     padding-left: 13px;
     padding-top: 9px;
@@ -218,28 +227,25 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
 }
 
-.booking-form-counters label {
-    margin-right: 10px;
+.booking-adults label, .booking-kids label {
+    margin-right: 40px;
 }
 
-.booking-form-dates input, .booking-form-counters input {
+.booking-form-dates input, .booking-adults input, .booking-kids input {
     background-color: #f2f2f2;
 }
 
-.booking-form-dates input:hover, .booking-form-counters input:hover {
+.booking-form-dates input:hover, .booking-adults input:hover, .booking-kids input:hover {
     background-color: #ebebeb;
 }
 
-.booking-form-dates input:focus, .booking-form-counters input:focus {
+.booking-form-dates input:focus, .booking-adults input:focus, .booking-kids input:focus {
     background-color: #ffffff;
 }
 
-.submit-field {
-    text-align: center;
-    margin-top: 54px;
-}
-
 .booking-form-submit {
+    margin-top: 54px;
+    margin-left: 56px;
     width: 458px;
     padding-top: 17px;
     padding-bottom: 22px;
